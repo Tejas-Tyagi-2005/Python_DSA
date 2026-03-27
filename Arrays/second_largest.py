@@ -4,13 +4,13 @@
 def sec_lar(arr):
     max_val = arr[0]
 
-    sec_val = float('inf')
+    sec_val = float('-inf')
 
     for i in arr:
         if i > max_val:
             sec_val = max_val
             max_val = i 
-        if i > sec_val and i < max_val:    
+        elif i > sec_val and i < max_val:    
             sec_val = i
     return sec_val
 
