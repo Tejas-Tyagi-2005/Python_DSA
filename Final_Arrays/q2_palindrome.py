@@ -18,7 +18,7 @@ def string_rev(s):
 def palindrome_check(s):
     
     if string_rev(s) == s:
-         return True  
+         return True 
     else :
          return False
         
