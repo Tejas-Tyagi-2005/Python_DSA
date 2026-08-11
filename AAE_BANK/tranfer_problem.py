@@ -9,7 +9,12 @@ It should return the number of elements from the beginning of the array needed f
 
 def first_position_sum(arr, target):
 
-
+    if arr is None:
+        return -1 
+    
+    if not arr:
+        return -1
+     
     number_of_elements_before_target = 0 
 
     current_sum = 0 
